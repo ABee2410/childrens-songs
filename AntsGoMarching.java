@@ -42,11 +42,12 @@ public class AntsGoMarching
     /**
      * Sings the last two lines of each verse.
      */ 
-    public static void rain() 
+    public static void rain(String n) 
     {
+        if (n != "ten" ){  
         System.out.println("And they all go marching down to the ground");
         System.out.println("To get out of the rain, BOOM! BOOM! BOOM!\n");
-
+    }
     }
 
     /**
@@ -60,7 +61,7 @@ public class AntsGoMarching
            goMarching(n);
            noHurrah(n);
            littleAnt(action);
-           rain();
+           rain(n);
         
     }
 
@@ -80,7 +81,7 @@ public class AntsGoMarching
         singIt("seven","pray to heaven");
         singIt("eight","shut the gate");
         singIt("nine","check the time");
-        singIt("ten","say 'THE END'");
+        singIt("ten","say \"THE END!\"");
         
     }
    
